@@ -1,0 +1,1 @@
+I would like to create three mini-applications, and combine them all into a single larger application. I'm separating each so that I can work on everything separately, and if something goes wrong, I can isolate the problem and take care of it without exposing the rest of my code to those changes. 

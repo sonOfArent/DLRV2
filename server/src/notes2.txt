@@ -1,0 +1,24 @@
+I have written this from the perspective of other sides, so now I'll write it from the API side.
+
+I have three applets I want to create and then combine, revolving around switching around the item name and types so as to create a curated randomizer. I have ideas about how I want to utilize frontend stuff, but I think in order to generate the datapack zipped folder itself, I'll have to utilize the backend server. I'm using Heroku for this, but that isn't important now.
+
+I'll start with the first applet, both frontend and backend. I'd like to create a minecraft block randomizer. I.e., breaking any of the chosen blocks will give you the drop for another block. I won't worry about the frontend yet, a lot of that is visual planning and I'm not concerned about that for now. Functionality before vanity.
+
+I think the process will be this:
+ 
+--- FRONTEND ---
+ - Choose blocks I want added to the random pool
+- After submit, that pool will be sent back to the backend
+
+--- BACKEND ---
+- Receive random pool (from /block for blocks)
+- Generate shuffled loot table datapack out of a template
+- Send the zipped folder back to client
+
+--- FRONTEND ---
+- Receive zipped folder
+- Download zipped folder
+
+It seems pretty simple and close to how it's supposed to be done. Therefore, until such time as I am disproven, I will assume this is the correct way to do it.
+
+I will focus on the frontend second. In the meantime, let's focus on creating the server.
